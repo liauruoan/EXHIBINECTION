@@ -1,0 +1,45 @@
+@each $size, $length in $spacers {
+  .m-#{$size}{
+    margin: $length;
+  }
+  .mt-#{$size}{
+    margin-top: $length;
+  }
+  .mb-#{$size}{
+    margin-bottom: $length;
+  }
+  .my-#{$size}{
+    margin: $length 0;
+  }
+  .mr-#{$size}{
+    margin-right: $length;
+  }
+  .ml-#{$size}{
+    margin-left: $length;
+  }
+  .mx-#{$size}{
+    margin: 0 $length;
+  }
+
+  .p-#{$size}{
+    padding: $length;
+  }
+  .pt-#{$size}{
+    padding-top: $length;
+  }
+  .pb-#{$size}{
+    padding-bottom: $length;
+  }
+  .py-#{$size}{
+    padding: $length 0;
+  }
+  .pr-#{$size}{
+    padding-right: $length;
+  }
+  .pl-#{$size}{
+    padding-left: $length;
+  }
+  .px-#{$size}{
+    padding: 0 $length;
+  }
+}

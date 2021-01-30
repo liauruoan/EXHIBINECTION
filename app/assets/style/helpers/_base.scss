@@ -1,8 +1,22 @@
-.container{width: 1110px;}
-
 * , *::before, *::after {
 	box-sizing: border-box;
 }
+
+body {
+  font-family: 'Noto Sans CJK TC', 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, dl {
+  line-height: 1.2;
+}
+
+h1 {font-size: 40px;}
+h2 {font-size: 36px;}
+h3 {font-size: 32px;}
+h4 {font-size: 28px;}
+h5 {font-size: 24px;}
+h6 {font-size: 20px;}
 
 ::placeholder {
 	opacity: 0.2;
@@ -14,9 +28,21 @@ input:focus::placeholder {
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 	height: auto;
 	display: block;
+	object-fit: cover;
+  object-position:center;
 }
 
-a{ text-decoration: none; }
+a{ 
+  display: block;
+  color: $darkgray;
+  transition: all 0.5s; // 滑鼠移過時增加動態效果
+  text-decoration: none;
+  
+	&:hover{
+    color: $secondary;
+		text-decoration: none;
+	}
+}

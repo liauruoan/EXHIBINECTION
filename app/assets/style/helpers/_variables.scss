@@ -1,8 +1,88 @@
-// 顏色
+// color
 
-$primary: #630834;
+$primary:   #630834;
 $secondary: #E31277;
-$lightgray: #818A91;
-$darkgray: #373A3C;
+$lightgray: #EFEFEF;
+$gray:      #818A91;
+$darkgray:  #373A3C;
+$white:     #ffffff;
+$black:     #212529;
 
-$spacers: 16px;
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "lightgray":  $lightgray,
+    "gray":       $gray,
+    "darkgray":   $darkgray,
+    "white":      $white,
+    "black":      $black
+  ),
+  $theme-colors
+);
+
+
+// Spacing
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0:0,
+    1: ($spacer * 0.25),   //4px
+    2: ($spacer * .375),   //6px
+    3: ($spacer * 0.5),    //8px
+    4: ($spacer * .625),   //10px
+    5: ($spacer * .75),    //12px
+    6: ($spacer * .875),   //14px
+    7: $spacer,
+    8: ($spacer * 1.125),  //18px
+    9: ($spacer * 1.25),   //20px
+    10: ($spacer * 1.375), //22px
+    11: ($spacer * 1.5),   //24px
+    12: ($spacer * 1.625), //26px
+    13: ($spacer * 1.75),  //28px
+    14: ($spacer * 1.875), //30px
+    15: ($spacer * 2),     //32px
+    16: ($spacer * 2.125), //34px
+    17: ($spacer * 2.25),  //36px
+    18: ($spacer * 2.5),   //40px
+    19: ($spacer * 2.75),  //44px
+    20: ($spacer * 2.875), //46px
+    21: ($spacer * 3),     //48px
+    22: ($spacer * 3.125), //50px
+    23: ($spacer * 3.25),  //52px
+    24: ($spacer * 3.5),   //56px
+    25: ($spacer * 3.75),  //60px
+    26: ($spacer * 4),     //64px
+    27: ($spacer * 4.75),  //76px
+    28: ($spacer * 5),     //80px
+    29: ($spacer * 5.375), //86px
+    30: ($spacer * 5.75),  //92px
+    31: ($spacer * 6.375), //102px
+    32: ($spacer * 6.5),   //104px
+    33: ($spacer * 11.25), //180px
+  ),
+  $spacers
+);
+
+
+// font size
+
+$font-size-base: 1rem;
+$font-size: () !default;
+$font-size: map-merge(
+  (
+    'sm':  ($font-size-base * 0.875), //14px
+    'base': $font-size-base,          //16px
+    'lg':  ($font-size-base * 1.25),  //20px
+    'xl':  ($font-size-base * 1.375), //22px
+    '3xl': ($font-size-base * 1.5),   //24px
+    '4xl': ($font-size-base * 1.75),  //28px
+    '5xl': ($font-size-base * 2),     //32px
+    '6xl': ($font-size-base * 2.25),  //36px
+    '7xl': ($font-size-base * 2.5),   //40px
+  ),
+  $font-size
+);
