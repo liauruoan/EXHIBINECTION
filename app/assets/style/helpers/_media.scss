@@ -1,0 +1,9 @@
+// mobile none
+
+.pad-none{
+    display: block;
+
+    @include pad{
+        display: none;
+    }
+}
