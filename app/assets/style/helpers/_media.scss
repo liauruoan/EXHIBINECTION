@@ -7,3 +7,19 @@
         display: none;
     }
 }
+
+.mobile-none{
+    display: block;
+
+    @include mobile{
+        display: none;
+    }
+}
+
+.mobile-only{
+    display: none;
+
+    @include mobile{
+        display: block;
+    }
+}

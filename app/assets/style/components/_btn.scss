@@ -1,0 +1,25 @@
+.btn{
+  padding: 14px;
+  border-radius: 4px;
+}
+
+.btn-primary{
+  color: $white;
+  line-height: 1;
+  background-color: $primary;
+  border: 0px;
+}
+
+.btn-secondary{
+  color: $white;
+  line-height: 1;
+  background-color: $secondary;
+  border: 0px;
+}
+
+.btn-outline-white{
+  color: $white;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid $white;
+}
