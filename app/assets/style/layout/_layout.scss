@@ -6,6 +6,14 @@
 
 .cart-number{
   position: absolute;
+  top: -6px;
+  right: -10px;
+
+  font-size: 12px;
+  padding: 2px 6px;
+  color: $white;
+  background-color: $secondary;
+  border-radius: 50%;
 }
 
 
@@ -64,7 +72,32 @@
   }
 }
 
+.max-w__328{
+  max-width: 328px;
+  @include mobile{
+    max-width: 100%;
+  }
+}
 
+
+// otherExhibit
+
+.otherExhibit{
+  margin-bottom: 60px;
+
+  & li {width: 32%;}
+  @include pad{
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 8px auto;
+
+    & li {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+}
 
 // sendmail
 
@@ -74,7 +107,37 @@
   background-position: center center;
   background-size: cover;
 
-  h3{ line-height: 1.5;}
+  & h3{
+    line-height: 1.5;
+    margin-bottom: 12px;
+
+    @include mobile{
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.inputGroup{
+  width: 350px;
+  display: flex;
+
+  @include mobile {width: 100%;}
+
+  & input {
+    width: 70%;
+    line-height: 1;
+    border: 0;
+    border-radius: 4px 0 0 4px;
+  }
+
+  & a {
+    width: 30%;
+    line-height: 1;
+    color: $white;
+    background-color: $secondary;
+    border-radius: 0 4px 4px 0;
+  }
 }
 
 // footer

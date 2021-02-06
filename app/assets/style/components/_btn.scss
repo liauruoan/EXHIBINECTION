@@ -1,6 +1,9 @@
 .btn{
-  padding: 14px;
+  display: inline-block;
+  padding: 12px;
   border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .btn-primary{
@@ -8,6 +11,11 @@
   line-height: 1;
   background-color: $primary;
   border: 0px;
+
+  &:hover{
+    color: $white;
+    background-color: $secondary;
+  }
 }
 
 .btn-secondary{
@@ -15,6 +23,11 @@
   line-height: 1;
   background-color: $secondary;
   border: 0px;
+
+  &:hover{
+    color: $white;
+    background-color: $primary;
+  }
 }
 
 .btn-outline-white{
@@ -22,4 +35,28 @@
   line-height: 1;
   background-color: transparent;
   border: 1px solid $white;
+
+  &:hover{
+    color: $white;
+    background-color: $primary;
+    border: 1px solid $primary;
+  }
+}
+
+.btn-outline-primary{
+  color: $primary;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid $primary;
+
+  &:hover{
+    color: $white;
+    background-color: $secondary;
+    border: 1px solid $secondary;
+  }
+}
+
+.btn-group{
+  display: flex;
+  justify-content: space-between;
 }

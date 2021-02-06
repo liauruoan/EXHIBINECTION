@@ -26,6 +26,10 @@
 
   <%- contents %>
 
+  <% if (otherExhibit) { %>
+    <%- include('layout/otherExhibit.ejs'); %>
+  <% } %>
+
   <% if (sendmail) { %>
     <%- include('layout/sendmail.ejs'); %>
   <% } %>

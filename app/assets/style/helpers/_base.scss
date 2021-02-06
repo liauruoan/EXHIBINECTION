@@ -5,6 +5,7 @@
 body {
   font-family: 'Noto Sans CJK TC', 'Roboto', sans-serif;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, dl {
@@ -19,7 +20,7 @@ h5 {font-size: 24px;}
 h6 {font-size: 20px;}
 
 ::placeholder {
-	opacity: 0.2;
+  color: $gray;
 	font-size: 16px;
 }
 

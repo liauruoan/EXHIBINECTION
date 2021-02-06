@@ -1,0 +1,60 @@
+// cardTypeA
+
+.cardTypeA{
+    display: flex;
+    justify-content: space-between;
+
+    @include pad{
+        flex-direction: column;
+    }
+}
+
+.cardA-img{
+    height: 350px;
+    margin-bottom: 4px;
+
+    @include pad{ height: 345px; }
+
+    img{ height: 100%; }
+}
+
+.cardA-title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.cardA-content{
+    font-size: 20px;
+    // font-family: 'Roboto';
+    line-height: 1.5;
+}
+
+
+// cardTypeB
+
+.cardTypeB{
+    max-width: 1090px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #EFEFEF;
+
+    @include pad{
+        flex-direction: column;
+    }
+}
+
+.cardB-content{
+    padding: 40px 30px;
+}
+
+.cardB-img{
+    width: 350px;
+    height: 350px;
+
+    img{ height: 100%; }
+}
+
+.cardB-title{}
+

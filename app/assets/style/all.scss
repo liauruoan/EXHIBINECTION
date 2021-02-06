@@ -2,13 +2,16 @@
 @import "helpers/mixin";
 @import "helpers/reset";
 
+@import "helpers/text";
 @import "helpers/base";
 @import "helpers/media";
 @import "helpers/utilities";
-@import "helpers/text";
 @import "helpers/spacing";
 @import "helpers/custom";
 
 @import "layout/layout";
 
 @import "components/btn";
+@import "components/card";
+
+@import "pages/index";
