@@ -42,3 +42,12 @@
     color: $value;
   }
 }
+
+
+// font size
+
+@each $size, $value in $font-size {
+  .text-#{$size}{
+    font-size: $value;
+  }
+}

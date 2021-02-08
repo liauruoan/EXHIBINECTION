@@ -1,5 +1,80 @@
+// popularExhibit
+
 .popularExhibit{
-  @include mobile{
-    & h3{ margin-bottom: 8px;}
+  margin-top: 0;
+
+  @include pad{
+    margin-top: 20px;
+  }
+
+  h3{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1110px;
+    padding-left: 10px;
+
+    @include pad{
+      width: 345px;
+      padding-left: 0;
+    }
+  }
+}
+
+.popularExhibit-info{
+  max-width: 1090px;
+  margin: 0 auto 60px auto;
+
+  @include pad{
+    margin: 0 auto 4px auto;
+  }
+}
+
+
+// liveReview
+
+.liveReview{
+  max-width: 1110px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+
+  @include pad{
+    width: 365px;
+  }
+}
+
+.liveReview-bg{
+  height: 482px;
+  background: url(./../images/photo-5.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  margin-bottom: 60px;
+
+  @include pad{
+    margin-bottom: 24px;
+  }
+}
+
+.liveReview-info{
+  width: 445px;
+  height: 100%;
+  padding: 40px 20px 36px 20px;
+  color: $white;
+  background: #190014CC;
+
+  @include pad{
+    width: 100%;
+  }
+
+  img {
+    width: 128px;
+    height: 128px;
+  }
+
+  p {
+    @include pad{
+      font-size: 16px;
+    }
   }
 }

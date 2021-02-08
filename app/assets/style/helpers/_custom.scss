@@ -15,3 +15,17 @@
   background: url(./../images/logo.svg) center center no-repeat;
   @include hide-text
 }
+
+.titleH3{
+  font-weight: 700;
+  margin-bottom: 24px;
+  @include pad{
+    margin-bottom: 8px;
+  }
+}
+
+
+// background-color
+
+.bg-gray { background-color: #EFEFEF;}
+.bg-primary { background-color: $primary;}

@@ -1,60 +1,97 @@
+.card-title{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+.card-text{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+
+  @include pad{ font-size: 16px;}
+}
+
+
 // cardTypeA
 
 .cardTypeA{
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    @include pad{
-        flex-direction: column;
-    }
+  @include pad{
+    flex-direction: column;
+  }
 }
 
 .cardA-img{
-    height: 350px;
-    margin-bottom: 4px;
+  height: 350px;
+  margin-bottom: 4px;
 
-    @include pad{ height: 345px; }
+  @include pad{ height: 345px; }
 
-    img{ height: 100%; }
-}
-
-.cardA-title{
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 4px;
+  img{ height: 100%; }
 }
 
 .cardA-content{
-    font-size: 20px;
-    // font-family: 'Roboto';
-    line-height: 1.5;
+  font-size: 20px;
+  // font-family: 'Roboto';
+  line-height: 1.5;
 }
 
 
 // cardTypeB
 
 .cardTypeB{
-    max-width: 1090px;
-    margin: 0 auto;
-    display: flex;
-    background-color: #EFEFEF;
+  height: 350px;
+  display: flex;
+  margin-bottom: 20px;
 
-    @include pad{
-        flex-direction: column;
-    }
+  @include pad{
+    background-color: #EFEFEF;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-top: 24px;
+  }
 }
 
 .cardB-content{
-    padding: 40px 30px;
+  width: 540px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+
+  @include pad{
+    width: 345px;
+    padding: 8px 0 24px 0;
+  }
 }
 
 .cardB-img{
-    width: 350px;
-    height: 350px;
+  width: 350px;
+  height: 350px;
 
-    img{ height: 100%; }
+  @include pad{ 
+    height: 345px;
+    width: 345px;
+  }
+
+  img{ 
+    height: 100%; 
+  }
 }
 
-.cardB-title{}
+.cardB-info{
+  height: 350px;
+  margin: 0 20px 0 auto;
+  padding: 40px 0 52px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
+  @include pad{
+    display: none;
+  }
+}

@@ -1,25 +1,33 @@
 // mobile none
 
-.pad-none{
-    display: block;
+.desk-none{
+  display: none;
 
-    @include pad{
-        display: none;
-    }
+  @include pad{
+    display: block;
+  }
+}
+
+.desk-only{
+  display: block;
+
+  @include pad{
+    display: none;
+  }
 }
 
 .mobile-none{
-    display: block;
+  display: block;
 
-    @include mobile{
-        display: none;
-    }
+  @include mobile{
+    display: none;
+  }
 }
 
 .mobile-only{
-    display: none;
+  display: none;
 
-    @include mobile{
-        display: block;
-    }
+  @include mobile{
+    display: block;
+  }
 }

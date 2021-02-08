@@ -25,7 +25,7 @@ $theme-colors: map-merge(
 
 // Spacing
 
-$spacer: 1rem !default;
+$spacer: 16px !default;
 $spacers: () !default;
 $spacers: map-merge(
   (
@@ -63,6 +63,7 @@ $spacers: map-merge(
     31: ($spacer * 6.375), //102px
     32: ($spacer * 6.5),   //104px
     33: ($spacer * 11.25), //180px
+    auto: auto,
   ),
   $spacers
 );
@@ -70,7 +71,7 @@ $spacers: map-merge(
 
 // font size
 
-$font-size-base: 1rem;
+$font-size-base: 16px;
 $font-size: () !default;
 $font-size: map-merge(
   (
