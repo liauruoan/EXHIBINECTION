@@ -1,7 +1,7 @@
 // popularExhibit
 
 .popularExhibit{
-  margin-top: 0;
+  margin-top: 60px;
 
   @include pad{
     margin-top: 20px;
@@ -20,12 +20,45 @@
   }
 }
 
-.popularExhibit-info{
+.popularExhibit-list{
   max-width: 1090px;
   margin: 0 auto 60px auto;
 
   @include pad{
     margin: 0 auto 4px auto;
+  }
+}
+
+.popularExhibit-content{
+  height: 350px;
+  margin-bottom: 20px;
+
+  @include pad{
+    background-color: #EFEFEF;
+    height: auto;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-top: 24px;
+  }
+}
+
+.popularExhibit-info{
+  width: 540px;
+  padding: 40px 30px;
+
+  @include pad{
+    width: 345px;
+    padding: 8px 0 24px 0;
+  }
+}
+
+.popularExhibit-date{
+  height: 350px;
+  margin: 0 20px 0 auto;
+  padding: 40px 0 52px 0;
+
+  @include pad{
+    display: none;
   }
 }
 

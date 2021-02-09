@@ -1,0 +1,36 @@
+.designExhibit{
+  height: 417px;
+  padding-top: 81px;
+  padding-bottom: 51px;
+  display: flex;
+
+  @include pad{
+    height: 100%;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    flex-direction: column-reverse;
+  }
+
+  img {
+    margin: 0 30px;
+    @include pad{
+      margin: 0 0 16px 0;
+    }
+  }
+}
+
+.designExhibit-info{
+  width: 350px;
+
+  @include pad{
+    width: 100%;
+  }
+
+  h3{
+    margin-bottom: 24px;
+    @include pad{
+      margin-bottom: 8px;
+      font-size: 28px;
+    }
+  }
+}

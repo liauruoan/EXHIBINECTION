@@ -43,3 +43,8 @@
 
 .w__140 { width: 140px; }
 .w__190 { width: 190px; }
+
+.w__350{
+  width: 350px;
+  @include pad{ width: 345px; }
+}
