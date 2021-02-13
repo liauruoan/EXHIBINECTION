@@ -4,3 +4,9 @@ $(document).ready(function() {
       $('body').toggleClass('showMenu-list-show');
   });
 });
+
+$(document).ready(function(){
+  $('.cart').click(function(){ 
+      $('.cartList').slideToggle();
+  });
+});

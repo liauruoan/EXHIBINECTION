@@ -24,15 +24,52 @@
   }
 }
 
+.textIndent-2{
+  text-indent: 2em;
+}
+
 
 // background-color
 
+.bg-white { background-color: $white;}
 .bg-gray { background-color: #EFEFEF;}
 .bg-primary { background-color: $primary;}
 
 
 // boder
 
-.boderLeft{
+.boderLeft-white{
   border-left: 1px solid $white;
+}
+
+.boderLeft-black{
+  border-left: 1px solid $black;
+}
+
+.boderTop-secondary{
+  border-top: 2px solid $secondary;
+}
+
+.boderTop-lightgray{
+  border-top: 2px solid $lightgray;
+}
+
+
+// position
+
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+
+.rightCenter {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  // 定位垂直置中
+  z-index: 1;
+}
+
+.leftTop{
+  left: 5px;
+  top: 5px;
+  z-index: 1;
 }

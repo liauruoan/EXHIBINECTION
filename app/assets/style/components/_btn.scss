@@ -6,15 +6,30 @@
   vertical-align: middle;
 }
 
+
+.btn-gray{
+  color: $white;
+  line-height: 1;
+  background-color: $gray;
+  border: 1px solid $gray;
+
+  &:hover{
+    color: $white;
+    background-color: $black;
+    border: 1px solid $black;
+  }
+}
+
 .btn-primary{
   color: $white;
   line-height: 1;
   background-color: $primary;
-  border: 0px;
+  border: 1px solid $primary;
 
   &:hover{
     color: $white;
     background-color: $secondary;
+    border: 1px solid $secondary;
   }
 }
 
@@ -22,13 +37,16 @@
   color: $white;
   line-height: 1;
   background-color: $secondary;
-  border: 0px;
+  border: 1px solid $secondary;
 
   &:hover{
     color: $white;
     background-color: $primary;
+    border: 1px solid $primary;
   }
 }
+
+
 
 .btn-outline-white{
   color: $white;
@@ -40,6 +58,19 @@
     color: $white;
     background-color: $primary;
     border: 1px solid $primary;
+  }
+}
+
+.btn-outline-gray{
+  color: $gray;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid $gray;
+
+  &:hover{
+    color: $white;
+    background-color: $gray;
+    border: 1px solid $gray;
   }
 }
 

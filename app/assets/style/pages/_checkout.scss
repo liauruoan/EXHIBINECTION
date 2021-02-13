@@ -1,0 +1,28 @@
+.checkoutList{
+  width: 67%;
+}
+
+.dot{
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot-secondary{
+  border: 2px solid $secondary;
+  background-color: $secondary;
+}
+
+.dot-outline-secondary{
+  border: 2px solid $secondary;
+  background-color: $white;
+}
+
+.checkoutNext{
+  width: 32%;
+}

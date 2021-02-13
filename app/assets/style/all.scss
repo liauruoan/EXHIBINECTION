@@ -7,12 +7,14 @@
 @import "helpers/media";
 @import "helpers/utilities";
 @import "helpers/spacing";
-@import "helpers/custom";
-
-@import "layout/layout";
 
 @import "components/btn";
 @import "components/card";
 
+@import "layout/layout";
+@import "helpers/custom";
+
 @import "pages/index";
 @import "pages/design";
+@import "pages/detail";
+@import "pages/checkout";

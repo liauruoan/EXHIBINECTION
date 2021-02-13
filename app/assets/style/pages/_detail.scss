@@ -1,0 +1,67 @@
+.detailBuy{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  margin-bottom: 40px;
+
+  @include pad{
+    flex-direction: column;
+    width: 365px;
+    padding-top: 44px;
+  }
+}
+
+.detailInfo{
+  width: 49%;
+  @include pad{
+    width: 100%;
+  }
+}
+
+.detailInfo-img{
+  background: url(./../images/photo-2.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;;
+}
+
+.buyTicket{
+  width: 49%;
+  @include pad{
+    width: 100%;
+  }
+}
+
+.buyTicket-list{
+  display: flex;
+  height: 256px;
+
+  @include pad{
+    flex-direction: column;
+    height: auto;
+  }
+
+  > li{
+    padding-top: 90px;
+    @include pad{
+      width: 100%;
+      border: none;
+      padding-top: 40px;
+    }
+  }
+}
+
+.detail{
+  margin-bottom: 60px;
+  @include pad{
+    margin-bottom: 24px;
+  }
+}
+
+.detail-content{
+  display: flex;
+  margin: 0 auto;
+  @include pad{
+    flex-direction: column-reverse;
+    width: 345px;
+  }
+}
