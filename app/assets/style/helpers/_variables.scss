@@ -84,6 +84,7 @@ $font-size: map-merge(
     '5xl': ($font-size-base * 2),     //32px
     '6xl': ($font-size-base * 2.25),  //36px
     '7xl': ($font-size-base * 2.5),   //40px
+    '8xl': ($font-size-base * 3.125), //50px
   ),
   $font-size
 );

@@ -1,3 +1,11 @@
+.design{
+  margin-bottom: 60px;
+
+  @include pad{
+    margin-bottom: 24px;
+  }
+}
+
 .designExhibit{
   height: 417px;
   padding-top: 81px;

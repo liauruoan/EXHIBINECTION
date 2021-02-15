@@ -36,27 +36,52 @@
 
 // height
 
-.h-100 { height: 100%; }
+.h-100  { height: 100%; }
 
+.h__84  { height: 84px; }
 .h__256 { height: 256px; }
 .h__400 { height: 400px; }
 .h__559 { height: 559px; }
 
-
+.h__700 {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  @include pad { height: auto; }
+}
 
 
 // width
 
+.w-32  {
+  width: 32%;
+  @include pad { width: 49%; }
+}
+
 .w-49  { width: 49%; }
 .w-50  { width: 50%; }
+
+.w-67  {
+  width: 67%;
+  @include pad { width: 100%; }
+}
+
 .w-100 { width: 100%; }
 
 .w__140 { width: 140px; }
+
+.w__150  {
+  width: 150px;
+  @include pad { width: 49%; }
+}
+
+.w__160 { width: 160px; }
 .w__190 { width: 190px; }
 
-.w__350{
+.w__350 {
   width: 350px;
   @include pad{ width: 345px; }
 }
 
 .borderRadius-4{ border-radius: 4px;}
+

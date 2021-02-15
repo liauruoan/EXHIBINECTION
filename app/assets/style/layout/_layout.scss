@@ -133,17 +133,20 @@
 .otherExhibit{
   margin-bottom: 60px;
 
-  & li {width: 32%;}
   @include pad{
     max-width: 345px;
     display: flex;
     flex-direction: column;
     margin: 0 auto 8px auto;
+  }
+}
 
-    & li {
-      width: 100%;
-      margin-bottom: 16px;
-    }
+.otherExhibit-list{
+  width: 32%;
+
+  @include pad{
+    width: 100%;
+    margin-bottom: 16px;
   }
 }
 

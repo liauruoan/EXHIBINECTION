@@ -15,6 +15,12 @@ h4 {font-size: 28px;}
 h5 {font-size: 24px;}
 h6 {font-size: 20px;}
 
+input{
+  padding: 8px 12px;
+  border: 1px solid $gray;
+  border-radius: 4px;
+}
+
 ::placeholder {
   color: $gray;
 	font-size: 16px;
